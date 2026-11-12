@@ -1,41 +1,20 @@
-## How to run
+# Day 4 - API, analysis, smart search
 
-### 1. Setup
-```powershell
-cd "C:\Examate Git\GenAI_EXmate_04"
-python -m venv venv
-venv\Scripts\Activate.ps1
-pip install -r requirements.txt
-```
-
-### 2. Build the data
-```powershell
-python -m app.fetch      # downloads official pages into data/raw/
-python -m app.ingest     # cleans them into data/records.json
-```
-
-### 3. Start the API
-```powershell
-uvicorn app.main:app --reload
-```
-Open http://127.0.0.1:8000/docs for interactive docs.
-
-### 4. Endpoints
-| Method | Path | Description |
+| Task | Where | Status |
 |---|---|---|
-| GET | /health | service status and record count |
-| GET | /records?limit=20 | list records (limit 1 to 100) |
-| GET | /records/{id} | one record, 404 if missing |
-| GET | /search?q=text&top_k=5 | TF-IDF + cosine ranked search |
-| POST | /questions | save a visitor question (JSON: `{"question": "..."}`) |
+| S1: FastAPI service with GET /health, /records?limit=, /records/{id} (404 if missing), /search?q=, POST /questions | `../app/main.py` | Code done; **not run** (FastAPI was missing where this was checked) |
+| S1: README "How to run" | `../README.md` | Done |
+| S2: `analysis/explore.py` prints 3 facts with pandas | `../analysis/explore.py` | Done and run |
+| S2: `app/smart_search.py` ranks records with TF-IDF + cosine and powers /search | `../app/smart_search.py` | Done and run |
+| Tag `week-1` | - | **Missing** (needs a commit first, see root README) |
 
-Example:
-```powershell
-Invoke-RestMethod "http://127.0.0.1:8000/search?q=morning aarti"
+How to run (from the project root):
+
+```
+pip install -r requirements.txt
+uvicorn app.main:app --reload       # open http://127.0.0.1:8000/docs
+python analysis/explore.py
+python -m app.smart_search shej aarti
 ```
 
-### 5. Analysis
-```powershell
-python analysis\explore.py
-```
-Prints 3 facts about the records (topics, length of the temple day, data gaps).
+POST /questions saves to `data/questions.jsonl` (git-ignored) and returns 3 suggested records.
