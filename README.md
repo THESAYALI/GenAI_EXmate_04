@@ -62,13 +62,22 @@ Every record stores a `checked_on` date. Non-official domains are ignored.
 GenAI_EXmate_04/
 ├── README.md
 ├── day01/
-│   ├── day01_intro.py      # intro script
-│   └── day01_menu.py       # interactive menu
+│   ├── day01_intro.py        # intro script
+│   └── day01_menu.py         # interactive menu
 ├── data/
-│   └── sample_records.json # 20 records (Day 2)
-└── app/
-    ├── records.py          # load / search records (Day 2)
-    └── cli.py              # interactive command line (Day 2)
+│   ├── raw/                  # downloaded Sansthan pages (Day 3)
+│   ├── sample_records.json   # 20 sample records (Day 2)
+│   └── records.json          # cleaned records from ingest.py (Day 3)
+├── app/
+│   ├── records.py            # load / search records (Day 2)
+│   ├── cli.py                # interactive command line (Day 2)
+│   ├── ingest.py             # raw pages -> cleaned records.json (Day 3)
+│   ├── models.py             # Record dataclass (Day 3)
+│   ├── fetch.py              # downloads 3+ documents with requests (Day 3)
+│   ├── main.py               # FastAPI service (Day 4)
+│   └── smart_search.py       # TF-IDF + cosine ranking (Day 4)
+└── analysis/
+    └── explore.py            # pandas facts about the records (Day 4)
 ```
 
 ## How to run
@@ -76,8 +85,58 @@ GenAI_EXmate_04/
 ```bash
 git clone https://github.com/THESAYALI/GenAI_EXmate_04.git
 cd GenAI_EXmate_04
+pip install fastapi uvicorn requests pandas scikit-learn
+
+# Day 1
 python day01/day01_intro.py
 python day01/day01_menu.py
+
+# Day 3: download and clean data
+python app/fetch.py
+python app/ingest.py
+
+# Day 4: analysis and API
+python analysis/explore.py
+uvicorn app.main:app --reload
+```
+
+Then open http://127.0.0.1:8000/docs to try the endpoints.
+
+## Day 3 – Real data (Fri 6 Nov)
+
+**S1 – Ingest**
+- Download a first real slice of the data from the official pages:
+  - https://sai.org.in/en/faq
+  - https://sai.org.in/en/daily-programme
+- Save the raw files into `data/raw/`.
+- `app/ingest.py` cleans them into the project fields (`topic`, `place_or_service`, `timing`, `cost_inr`, `rule_or_tip`, `source_url`), uses `try/except` to skip bad rows, and saves `data/records.json`.
+
+**S2 – Models and fetch**
+- `app/models.py`: a `Record` dataclass for one record.
+- `app/fetch.py`: downloads 3+ documents with `requests`, with timeouts and error handling.
+
+## Day 4 – API and search (Sat 7 Nov)
+
+**S1 – FastAPI service (`app/main.py`)**
+
+| Method | Endpoint | What it does |
+|--------|----------|--------------|
+| GET | `/health` | Service status |
+| GET | `/records?limit=` | List records, limited by `limit` |
+| GET | `/records/{id}` | One record, **404** if missing |
+| GET | `/search?q=` | Search records by text |
+| POST | `/questions` | Ask a question, get an answer from the records |
+
+The README must include a **"How to run"** section (above).
+
+**S2 – Analysis and smart search**
+- `analysis/explore.py` prints 3 facts about the records using pandas.
+- `app/smart_search.py` ranks records with TF-IDF + cosine similarity and powers `/search`.
+- Tag the repo as `week-1`:
+
+```bash
+git tag week-1
+git push origin week-1
 ```
 
 ## Known risks
@@ -89,7 +148,9 @@ python day01/day01_menu.py
 
 - [x] Day 1 – Python basics, Git/GitHub, README
 - [ ] Day 2 – sample records, `records.py`, `cli.py`
+- [ ] Day 3 – `data/raw/`, `ingest.py`, `models.py`, `fetch.py`
+- [ ] Day 4 – FastAPI `main.py`, `explore.py`, `smart_search.py`, tag `week-1`
 
 ## Links
 
-- Repo: https://github.com/THESAYALI/GenAI_EXmate_04 git config --global user.name "THESAYALI"
+- Repo: https://github.com/THESAYALI/GenAI_EXmate_04
