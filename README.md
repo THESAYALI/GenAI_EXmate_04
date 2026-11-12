@@ -1,4 +1,4 @@
-# ShirdiYatra 🙏
+# ShirdiYatra 
 
 **Student:** Sayali Rajendra Pawar · CSE · Sanjivani University · SJ-50
 **Domain:** Travel & culture
