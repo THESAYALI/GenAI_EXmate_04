@@ -1,0 +1,34 @@
+{
+  "faq": {
+    "name": "faq",
+    "url": "https://sai.org.in/en/faq",
+    "ok": true,
+    "file": "faq.html",
+    "bytes": 61247,
+    "fetched_on": "2026-11-12"
+  },
+  "daily_programme": {
+    "name": "daily_programme",
+    "url": "https://sai.org.in/en/daily-programme",
+    "ok": true,
+    "file": "daily_programme.html",
+    "bytes": 51401,
+    "fetched_on": "2026-11-12"
+  },
+  "how_to_reach": {
+    "name": "how_to_reach",
+    "url": "https://sai.org.in/en/how-to-reach-shirdi",
+    "ok": true,
+    "file": "how_to_reach.html",
+    "bytes": 73970,
+    "fetched_on": "2026-11-12"
+  },
+  "accommodations": {
+    "name": "accommodations",
+    "url": "https://sai.org.in/en/accomodations",
+    "ok": true,
+    "file": "accommodations.html",
+    "bytes": 97375,
+    "fetched_on": "2026-11-12"
+  }
+}

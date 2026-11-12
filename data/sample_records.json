@@ -1,6 +1,2 @@
-[
-  {"topic": "daily programme", "place_or_service": "Kakad Aarti", "timing": "SAMPLE early morning - verify on sai.org.in", "cost_inr": 0, "rule_or_tip": "SAMPLE: arrive early for darshan queue", "source_url": "https://sai.org.in/en/daily-programme", "checked_on": "2026-11-07"},
-  {"topic": "daily programme", "place_or_service": "Madhyan Aarti", "timing": "SAMPLE midday - verify on sai.org.in", "cost_inr": 0, "rule_or_tip": "SAMPLE: carry ID proof", "source_url": "https://sai.org.in/en/daily-programme", "checked_on": "2026-11-07"},
-  {"topic": "rooms", "place_or_service": "Sai Bhakta Niwas - 4 bed room", "timing": "SAMPLE 24 hour stay", "cost_inr": 800, "rule_or_tip": "SAMPLE: good for family group, verify tariff", "source_url": "https://sai.org.in/en/faq", "checked_on": "2026-11-07"},
-  {"topic": "rooms", "place_or_service": "Sai Ashram - 2 bed room", "timing": "SAMPLE 24 hour stay", "cost_inr": 500, "rule_or_tip": "SAMPLE: budget option, verify tariff", "source_url": "https://sai.org.in/en/faq", "checked_on": "2026-11-07"}
-]
+
+{"id": 1, "topic": "...", "place_or_service": "...", "timing": "...", "cost_inr": 0, "rule_or_tip": "...", "source_url": "..."}
