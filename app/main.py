@@ -16,6 +16,8 @@ from pydantic import BaseModel, Field
 from app.chat import run_chat
 from app.llm import LLMError
 from app.smart_search import SmartSearch, load_default
+from app.rag import router as rag_router      # with the other imports at the top
+app.include_router(rag_router)                # right after app = FastAPI(...)
 
 QUESTIONS_FILE = Path(__file__).resolve().parent.parent / "data" / "questions.jsonl"
 

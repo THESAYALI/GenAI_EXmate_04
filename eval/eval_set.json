@@ -1,0 +1,17 @@
+[
+  {"id": "Q01", "question": "What time is the Kakad aarti at Shirdi?", "answerable": true, "expected_keywords": ["kakad", "aarti"]},
+  {"id": "Q02", "question": "What time is the Madhyan aarti?", "answerable": true, "expected_keywords": ["madhyan", "aarti"]},
+  {"id": "Q03", "question": "When does the Dhoop aarti happen in the evening?", "answerable": true, "expected_keywords": ["dhoop", "aarti"]},
+  {"id": "Q04", "question": "What time is the Shej aarti at night?", "answerable": true, "expected_keywords": ["shej", "aarti"]},
+  {"id": "Q05", "question": "Which Sansthan accommodation is cheapest for a family group?", "answerable": true, "expected_keywords": ["bhakta niwas", "ashram", "room"]},
+  {"id": "Q06", "question": "Can I book a helicopter ride from Shirdi to Shani Shingnapur through the Sansthan?", "answerable": false, "expected_keywords": []},
+  {"id": "Q07", "question": "What is the tariff of a Sai Bhakta Niwas room?", "answerable": true, "expected_keywords": ["bhakta niwas"]},
+  {"id": "Q08", "question": "What is the tariff of a room at Sai Ashram?", "answerable": true, "expected_keywords": ["ashram"]},
+  {"id": "Q09", "question": "How do I reach Shirdi by train from Hyderabad?", "answerable": true, "expected_keywords": ["kopargaon", "train", "railway"]},
+  {"id": "Q10", "question": "What time does the temple open for darshan in the morning?", "answerable": true, "expected_keywords": ["darshan", "open", "morning"]},
+  {"id": "Q11", "question": "Are there rooms for a group of seven people?", "answerable": true, "expected_keywords": ["room", "group", "bed"]},
+  {"id": "Q12", "question": "What is the rule about mobile phones or bags inside the temple?", "answerable": true, "expected_keywords": ["mobile", "bag", "phone", "locker"]},
+  {"id": "Q13", "question": "What is the price of a bitcoin in rupees today?", "answerable": false, "expected_keywords": []},
+  {"id": "Q14", "question": "Which airline flies from Mumbai to Shirdi airport on Sundays?", "answerable": false, "expected_keywords": []},
+  {"id": "Q15", "question": "What is the Dhoop aarti timing and is there any entry rule?", "answerable": true, "expected_keywords": ["dhoop", "aarti"]}
+]

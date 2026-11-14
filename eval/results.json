@@ -1,0 +1,238 @@
+[
+  {
+    "config": {
+      "name": "A: small chunks, top-3",
+      "chunk_size": 40,
+      "top_k": 3
+    },
+    "accuracy": 0.6,
+    "retrieval_hit": 0.5,
+    "idk_correct": 1.0,
+    "citation_rate": 0.5,
+    "per_question": [
+      {
+        "id": "Q01",
+        "answerable": true,
+        "correct": true,
+        "confident": true,
+        "citations": 1
+      },
+      {
+        "id": "Q02",
+        "answerable": true,
+        "correct": true,
+        "confident": true,
+        "citations": 1
+      },
+      {
+        "id": "Q03",
+        "answerable": true,
+        "correct": false,
+        "confident": false,
+        "citations": 0
+      },
+      {
+        "id": "Q04",
+        "answerable": true,
+        "correct": true,
+        "confident": true,
+        "citations": 1
+      },
+      {
+        "id": "Q05",
+        "answerable": true,
+        "correct": false,
+        "confident": false,
+        "citations": 0
+      },
+      {
+        "id": "Q06",
+        "answerable": false,
+        "correct": true,
+        "confident": false,
+        "citations": 0
+      },
+      {
+        "id": "Q07",
+        "answerable": true,
+        "correct": true,
+        "confident": true,
+        "citations": 1
+      },
+      {
+        "id": "Q08",
+        "answerable": true,
+        "correct": true,
+        "confident": true,
+        "citations": 1
+      },
+      {
+        "id": "Q09",
+        "answerable": true,
+        "correct": false,
+        "confident": false,
+        "citations": 0
+      },
+      {
+        "id": "Q10",
+        "answerable": true,
+        "correct": false,
+        "confident": false,
+        "citations": 0
+      },
+      {
+        "id": "Q11",
+        "answerable": true,
+        "correct": false,
+        "confident": false,
+        "citations": 0
+      },
+      {
+        "id": "Q12",
+        "answerable": true,
+        "correct": false,
+        "confident": false,
+        "citations": 0
+      },
+      {
+        "id": "Q13",
+        "answerable": false,
+        "correct": true,
+        "confident": false,
+        "citations": 0
+      },
+      {
+        "id": "Q14",
+        "answerable": false,
+        "correct": true,
+        "confident": false,
+        "citations": 0
+      },
+      {
+        "id": "Q15",
+        "answerable": true,
+        "correct": true,
+        "confident": true,
+        "citations": 1
+      }
+    ]
+  },
+  {
+    "config": {
+      "name": "B: big chunks, top-5",
+      "chunk_size": 120,
+      "top_k": 5
+    },
+    "accuracy": 0.667,
+    "retrieval_hit": 0.583,
+    "idk_correct": 1.0,
+    "citation_rate": 0.583,
+    "per_question": [
+      {
+        "id": "Q01",
+        "answerable": true,
+        "correct": true,
+        "confident": true,
+        "citations": 1
+      },
+      {
+        "id": "Q02",
+        "answerable": true,
+        "correct": true,
+        "confident": true,
+        "citations": 1
+      },
+      {
+        "id": "Q03",
+        "answerable": true,
+        "correct": false,
+        "confident": false,
+        "citations": 0
+      },
+      {
+        "id": "Q04",
+        "answerable": true,
+        "correct": true,
+        "confident": true,
+        "citations": 1
+      },
+      {
+        "id": "Q05",
+        "answerable": true,
+        "correct": false,
+        "confident": false,
+        "citations": 0
+      },
+      {
+        "id": "Q06",
+        "answerable": false,
+        "correct": true,
+        "confident": false,
+        "citations": 0
+      },
+      {
+        "id": "Q07",
+        "answerable": true,
+        "correct": true,
+        "confident": true,
+        "citations": 1
+      },
+      {
+        "id": "Q08",
+        "answerable": true,
+        "correct": true,
+        "confident": true,
+        "citations": 1
+      },
+      {
+        "id": "Q09",
+        "answerable": true,
+        "correct": false,
+        "confident": false,
+        "citations": 0
+      },
+      {
+        "id": "Q10",
+        "answerable": true,
+        "correct": true,
+        "confident": true,
+        "citations": 1
+      },
+      {
+        "id": "Q11",
+        "answerable": true,
+        "correct": false,
+        "confident": false,
+        "citations": 0
+      },
+      {
+        "id": "Q12",
+        "answerable": true,
+        "correct": false,
+        "confident": false,
+        "citations": 0
+      },
+      {
+        "id": "Q13",
+        "answerable": false,
+        "correct": true,
+        "confident": false,
+        "citations": 0
+      },
+      {
+        "id": "Q14",
+        "answerable": false,
+        "correct": true,
+        "confident": false,
+        "citations": 0
+      },
+      {
+        "id": "Q15",
+        "answerable": true,
+        "correct": true,
+        "confident": true,
+        "citations": 1
+      }
+    ]
+  }
+]

@@ -588,3 +588,12 @@ commit small and often with clear messages.
 | **LangGraph** | A library to build agents as graphs with memory and approval steps |
 | **CI** | Continuous integration: GitHub Actions run lint, tests and build on every push |
 | **Checkpoint** | A live review with the instructor (Checkpoint 1 on Day 5, Checkpoint 2 on Day 10) |
+
+<!-- EVAL_TABLE_START -->
+| Config | chunk_size (words) | top_k | Answer accuracy | Retrieval hit | 'I don't know' correct | Citation rate | Winner |
+|---|---|---|---|---|---|---|---|
+| A: small chunks, top-3 | 40 | 3 | 60% | 50% | 100% | 50% |  |
+| B: big chunks, top-5 | 120 | 5 | 67% | 58% | 100% | 58% | **YES** |
+
+Winner: **B: big chunks, top-5**
+<!-- EVAL_TABLE_END -->
