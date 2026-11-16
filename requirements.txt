@@ -14,3 +14,5 @@ langgraph
 sentence-transformers>=3.0
 requests
 python-dotenv
+streamlit
+requests

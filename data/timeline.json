@@ -1,0 +1,18 @@
+{
+  "note": "SAMPLE times. Replace with the real values from your data/records.json (daily programme rows) and set checked_on.",
+  "checked_on": "REPLACE",
+  "source_url": "https://www.sai.org.in/en/daily-programme",
+  "aartis": [
+    {"name": "Kakad Aarti",   "time": "05:15"},
+    {"name": "Madhyan Aarti", "time": "12:00"},
+    {"name": "Dhoop Aarti",   "time": "18:30"},
+    {"name": "Shej Aarti",    "time": "22:00"}
+  ],
+  "darshan_queue": [
+    {"name": "Darshan queue", "start": "05:00", "end": "22:00"}
+  ],
+  "prasadalaya": [
+    {"name": "Prasadalaya (lunch)",  "start": "11:30", "end": "15:00"},
+    {"name": "Prasadalaya (dinner)", "start": "19:00", "end": "21:30"}
+  ]
+}
