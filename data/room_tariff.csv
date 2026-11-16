@@ -1,0 +1,9 @@
+room_type,ac,min_capacity,max_capacity,rate_per_night,extra_person_charge,source_url,checked_on
+Sai Ashram Non-AC Double,false,2,3,300,50,https://www.sai.org.in/en/accomodations,REPLACE
+Sai Ashram Non-AC Family,false,3,5,500,75,https://www.sai.org.in/en/accomodations,REPLACE
+Sai Bhakta Niwas Non-AC Double,false,2,3,400,75,https://www.sai.org.in/en/accomodations,REPLACE
+Sai Bhakta Niwas Non-AC Dorm Room,false,4,6,700,100,https://www.sai.org.in/en/accomodations,REPLACE
+Sai Bhakta Niwas AC Double,true,2,3,900,150,https://www.sai.org.in/en/accomodations,REPLACE
+Sai Bhakta Niwas AC Family,true,3,4,1200,200,https://www.sai.org.in/en/accomodations,REPLACE
+Sai Ashram AC Double,true,2,3,800,125,https://www.sai.org.in/en/accomodations,REPLACE
+Sai Ashram AC Suite,true,4,6,1800,250,https://www.sai.org.in/en/accomodations,REPLACE

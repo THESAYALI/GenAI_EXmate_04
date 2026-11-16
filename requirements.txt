@@ -10,7 +10,7 @@ pytest>=8.0
 fastapi>=0.110
 uvicorn[standard]>=0.29
 chromadb>=0.5
+langgraph
 sentence-transformers>=3.0
-
 requests
 python-dotenv

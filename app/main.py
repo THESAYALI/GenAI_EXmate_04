@@ -12,7 +12,7 @@ from typing import Literal
 from fastapi import FastAPI, HTTPException, Query
 from fastapi.middleware.cors import CORSMiddleware
 from pydantic import BaseModel, Field
-
+from app.agent_api import router as agent_router
 from app.chat import run_chat
 from app.llm import LLMError
 from app.smart_search import SmartSearch, load_default
