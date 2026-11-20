@@ -71,7 +71,7 @@ def clock_svg(data, arrival_min=None, ready_min=None):
     """A 24-hour clock: outer ring = darshan queue, inner ring = prasadalaya,
     dots = aartis, red needle = train arrival, dashed needle = ready to enter Sansthan."""
     cx = cy = 200
-    s = [f'<svg viewBox="0 0 400 400" width="100%" style="max-width:460px" xmlns="http://www.w3.org/2000/svg">',
+    s = ['<svg viewBox="0 0 400 400" width="100%" style="max-width:460px" xmlns="http://www.w3.org/2000/svg">',
          f'<circle cx="{cx}" cy="{cy}" r="185" fill="#fffaf0" stroke="#d9c9a3" stroke-width="2"/>']
     for h in range(24):                                     # hour ticks + labels
         x1, y1 = _pt(cx, cy, 175, h * 60)
