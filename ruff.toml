@@ -1,0 +1,10 @@
+line-length = 100
+target-version = "py311"
+extend-exclude = ["Rag Application", ".venv", "venv", "data/chroma", "day*"]
+
+[lint]
+# E = pycodestyle errors, F = pyflakes (unused imports, undefined names)
+select = ["E", "F"]
+ignore = ["E501", "E741"]
+
+

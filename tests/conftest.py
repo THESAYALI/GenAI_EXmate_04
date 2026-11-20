@@ -1,16 +1,9 @@
 import pytest
+from fastapi.testclient import TestClient
 
-from app.llm import FakeLLM
-from app.main import create_app
-
-
-@pytest.fixture
-def fake_llm():
-    return FakeLLM(reply="fake answer")
+from app.main import app
 
 
 @pytest.fixture
-def client(fake_llm):
-    app = create_app(llm=fake_llm)
-    app.config["TESTING"] = True
-    return app.test_client()
+def client():
+    return TestClient(app)

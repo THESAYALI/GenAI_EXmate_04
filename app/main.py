@@ -12,12 +12,10 @@ from typing import Literal
 from fastapi import FastAPI, HTTPException, Query
 from fastapi.middleware.cors import CORSMiddleware
 from pydantic import BaseModel, Field
-from app.agent_api import router as agent_router
 from app.chat import run_chat
 from app.llm import LLMError
 from app.smart_search import SmartSearch, load_default
 from app.rag import router as rag_router      # with the other imports at the top
-app.include_router(rag_router)                # right after app = FastAPI(...)
 
 QUESTIONS_FILE = Path(__file__).resolve().parent.parent / "data" / "questions.jsonl"
 
@@ -25,6 +23,7 @@ RECORDS = load_default()
 SEARCH = SmartSearch(RECORDS)
 
 app = FastAPI(title="ShirdiYatra API", version="0.2.0")
+app.include_router(rag_router)
 app.add_middleware(
     CORSMiddleware,
     allow_origins=["http://127.0.0.1:5500", "http://localhost:5500"],
