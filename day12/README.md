@@ -174,7 +174,7 @@ The project uses torch, sentence-transformers and chromadb, so the image is larg
         git push space main --force
 
 5. In the Space open **Settings, Variables and secrets** and add your API keys (names from `.env`).
-6. Wait for the build to finish. The live URL is `https://YOUR-HF-USERNAME-shirdiyatra.hf.space`.
+6. Wait for the build to finish. The live URL is `https://PASTE-YOUR-REAL-URL-HERE`.
 
 ### Option B: Render
 1. https://render.com, then **New +**, **Web Service**, connect the GitHub repo.
@@ -183,7 +183,7 @@ The project uses torch, sentence-transformers and chromadb, so the image is larg
 4. Create the service and wait for the deploy.
 
 ### Verify the deploy
-    curl https://YOUR-HF-USERNAME-shirdiyatra.hf.space/health
+    curl https://PASTE-YOUR-REAL-URL-HERE/health
 
 Also open the same URL in an incognito window. It must load without logging in.
 
@@ -196,9 +196,9 @@ Also open the same URL in an incognito window. It must load without logging in.
 
 ## 8. Live links (fill in after deploy)
 
-- **Live app:** https://YOUR-HF-USERNAME-shirdiyatra.hf.space
-- **Health:** https://YOUR-HF-USERNAME-shirdiyatra.hf.space/health
-- **API docs:** https://YOUR-HF-USERNAME-shirdiyatra.hf.space/docs
+- **Live app:** https://PASTE-YOUR-REAL-URL-HERE
+- **Health:** https://PASTE-YOUR-REAL-URL-HERE/health
+- **API docs:** https://PASTE-YOUR-REAL-URL-HERE/docs
 - **Tracker:** paste the live app URL in the course tracker
 
 ---
@@ -234,3 +234,5 @@ Also open the same URL in an incognito window. It must load without logging in.
         git commit -m "day-12: add day12 README"
         git push
 '@ | Set-Content -Encoding UTF8 day12\README.md
+
+
