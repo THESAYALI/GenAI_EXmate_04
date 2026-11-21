@@ -170,7 +170,7 @@ The project uses torch, sentence-transformers and chromadb, so the image is larg
 3. Commit and push it to GitHub.
 4. Push to the Space (the password is a Hugging Face **Write** access token):
 
-        git remote add space https://huggingface.co/spaces/YOUR-HF-USERNAME/shirdiyatra
+        git remote add space https://huggingface.co/spaces/yourusername/shirdiyatra
         git push space main --force
 
 5. In the Space open **Settings, Variables and secrets** and add your API keys (names from `.env`).
@@ -234,5 +234,6 @@ Also open the same URL in an incognito window. It must load without logging in.
         git commit -m "day-12: add day12 README"
         git push
 '@ | Set-Content -Encoding UTF8 day12\README.md
+
 
 
