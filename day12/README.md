@@ -1,3 +1,4 @@
+[![CI](https://github.com/THESAYALI/GenAI_EXmate_04/actions/workflows/ci.yml/badge.svg)](https://github.com/THESAYALI/GenAI_EXmate_04/actions/workflows/ci.yml)
 New-Item -ItemType Directory -Force day12 | Out-Null
 @'
 # Day 12 - CI/CD and Deployment (ShirdiYatra)
@@ -6,7 +7,7 @@ New-Item -ItemType Directory -Force day12 | Out-Null
 **Project:** ShirdiYatra (slug `sanjivani-sj-50-shirdiyatra`), a Shirdi trip-planning assistant
 **Repo:** https://github.com/THESAYALI/GenAI_EXmate_04
 
-[![CI](https://github.com/THESAYALI/GenAI_EXmate_04/actions/workflows/ci.yml/badge.svg)](https://github.com/THESAYALI/GenAI_EXmate_04/actions/workflows/ci.yml)
+
 
 ---
 
