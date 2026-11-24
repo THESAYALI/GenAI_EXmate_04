@@ -12,10 +12,10 @@ from typing import Literal
 from fastapi import FastAPI, HTTPException, Query
 from fastapi.middleware.cors import CORSMiddleware
 from pydantic import BaseModel, Field
-from app.chat import run_chat
-from app.llm import LLMError
-from app.smart_search import SmartSearch, load_default
-from app.rag import router as rag_router      # with the other imports at the top
+from chat import run_chat
+from llm import LLMError
+from smart_search import SmartSearch, load_default
+from rag import router as rag_router      # with the other imports at the top
 
 QUESTIONS_FILE = Path(__file__).resolve().parent.parent / "data" / "questions.jsonl"
 
@@ -47,6 +47,9 @@ class ChatOut(BaseModel):
     confidence: Literal["high", "medium", "low"]
     follow_up: str
 
+@app.get("/")
+def root():
+    return {"message": "Welcome to the ShirdiYatra API. Use /docs for the API documentation."}
 
 @app.get("/health")
 def health():
