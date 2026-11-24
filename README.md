@@ -1,6 +1,10 @@
 # ShirdiYatra
-
+[![CI](https://github.com/THESAYALI/GenAI_EXmate_04/actions/workflows/ci.yml/badge.svg)](https://github.com/THESAYALI/GenAI_EXmate_04/actions/workflows/ci.yml)
 **An AI trip planner for Shirdi, built only from the official Shri Saibaba Sansthan website.**
+
+**Live API:** [ShirdiYatra](https://shirdiyatra.onrender.com) ·
+[Health](https://shirdiyatra.onrender.com/health) ·
+[API docs](https://shirdiyatra.onrender.com/docs)
 
 | | |
 |---|---|
@@ -141,7 +145,7 @@ sessions of the same day.
 | 9 | Agent | `app/tools.py` (`plan_sansthan_rooms`), `app/agent_loop.py`, `app/graph.py` (LangGraph), `POST /agent` | - | To do |
 | 10 | UI + signature feature | `ui/app.py` (Streamlit), timeline card, screenshot, **Checkpoint 2 live demo** | `checkpoint-2` | To do |
 | 11 | Quality + Docker | `tests/` (8+ pytest), `ruff`, `Dockerfile`, `.dockerignore`, `docker-compose.yml` | - | Partly (4 tests exist) |
-| 12 | CI + deploy | `.github/workflows/ci.yml`, badge, 1 merged PR, live URL (Render / HF Spaces) | - | To do |
+| 12 | CI + deploy | `.github/workflows/ci.yml`, badge, 1 merged PR, live URL (Render / HF Spaces) | - | Done |
 | 13 | Production + marketing README | latency/token logs, cache, input limits, prompt-injection test, Mermaid diagram, demo video, `docs/resume.md` | - | To do |
 | 14 | Interview | `docs/interview.md` (60-second pitch + 10 answers), close all items in `PROGRESS.md`, rehearse demo twice | `final` | To do |
 | 15 | Final test + Demo Day | 45-minute test; 5-minute live demo + 3-minute Q&A | - | To do |
@@ -322,8 +326,7 @@ see what they can attend. Screenshot in README. **Checkpoint 2 live demo.** Tag 
 5. Rehearse the Checkpoint 2 live demo; `git tag checkpoint-2`.
 
 ---
-
-## 9. Phase D - Quality, Docker, CI, deploy (Days 11-13) - TO DO
+## 9. Phase D - Quality, Docker, CI, deploy (Days 11-13) - D11-D12 DONE, D13 TO DO
 
 ### Day 11 - Tests, lint, Docker
 
@@ -528,7 +531,7 @@ use `data/sample_records.json`. `app/main.py` needs Python 3.10 or newer.
 | D2 | 20 records, demo, `records.py`, `cli.py`, `requirements.txt`, `.gitignore` | create `.venv` on my PC; the sample file has no separate "extra person charge" field |
 | D3 | `models.py`, `fetch.py`, `ingest.py`, tests | **run `python day03/run_day3.py` again** (raw file names and manifest format in the repo are from an older version, so `python -m app.ingest` alone crashes; `records.json` is the old 23-record version); **check/fix room-table parsing** (live table has 9 columns and merged location cells, parser assumes 7) |
 | D4 | `main.py`, `smart_search.py`, `explore.py` | run the API once and test every endpoint; final commit and move tag `week-1` to it |
-| D5-D15 | - | not started (docs/, prompts/, eval/, ui/, Docker, CI, deploy ...) |
+| D5-D12 | docs, prompts, eval, RAG, agent, UI, tests, Docker, CI, deploy | see PROGRESS.md |
 
 Other items to settle:
 - **Repo name:** the task sheet says `sanjivani-sj-50-shirdiyatra`; the current remote is `GenAI_EXmate_04`.

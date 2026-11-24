@@ -17,15 +17,18 @@ Change `[ ]` to `[x]` and fill the evidence column or line.
 | D8 | app/rag.py, POST /ask with citations, eval/eval_set.json, eval/run_eval.py, winner table in README | README table | [ ] |
 | D9 | app/tools.py (plan_sansthan_rooms), agent_loop.py, graph.py, POST /agent | `day09/README.md` | [ ] |
 | D10 | ui/app.py Streamlit, citations, thumbs up/down, timeline card, screenshot, tag checkpoint-2 | README screenshot | [ ] |
-| D12 | ci.yml (ruff, pytest, docker build), green badge, PR #1 merged, live deploy, /health public | Actions page, live URL | [ ] |
+## D12 – CI + deploy
+- CI: .github/workflows/ci.yml (ruff, pytest, docker build), badge in README, PR #1 merged
+- Live URL: https://shirdiyatra.onrender.com
+- Health: https://shirdiyatra.onrender.com/health -> {"status":"ok"}
 | D13 | Latency + token logs, cache, input limits, injection test, Production notes, README, docs/resume.md | README, `docs/resume.md` | [ ] |
 | D14 | docs/interview.md, PROGRESS.md closed, demo rehearsed twice, tag final | this file | [ ] |
 
 ## Open items to close (D14)
 
 - [ ] `docs/interview.md` has no `[FILL]` left
-- [ ] README has no `YOUR-HF-USERNAME` left and shows the real live URL
-- [ ] Live `/health` returns OK in an incognito window (URL: ____________________)
+- [x] README has no `YOUR-HF-USERNAME` left and shows the real live URL
+- [x] Live `/health` returns OK (URL: https://shirdiyatra.onrender.com/health)
 - [ ] CI badge on README is green on `main`
 - [ ] PR #1 (`feature/day-12-ci`) is merged
 - [ ] README has the eval winner table (2 configs, 15 questions)
